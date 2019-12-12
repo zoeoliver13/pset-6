@@ -1,0 +1,23 @@
+h1{
+  text-align: center;
+  margin-top: 75px;
+  margin-left: 550px;
+  font-size: 60px;
+  font-family: serif;
+  color: white;
+  font-weight: bold;
+  border-style: double;
+  border-color: white;
+  border-width: 12px;
+  width: 550px;
+  height: 75px;
+}
+h2{
+  align:center;
+  height: 20px;
+  width: auto;
+}
+body{
+  background-color: #baa8a8;
+
+}
