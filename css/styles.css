@@ -1,7 +1,7 @@
 h1{
   text-align: center;
   margin-top: 75px;
-  margin-left: 550px;
+  margin-left: 350px;
   font-size: 60px;
   font-family: serif;
   color: white;
@@ -12,11 +12,7 @@ h1{
   width: 550px;
   height: 75px;
 }
-h2{
-  align:center;
-  height: 20px;
-  width: auto;
-}
+
 body{
   background-color: #baa8a8;
 
