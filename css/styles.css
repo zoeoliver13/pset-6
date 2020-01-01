@@ -1,19 +1,109 @@
+*{
+  font-family: Lucida , Courier;
+
+}
 h1{
-  text-align: center;
-  margin-top: 75px;
-  margin-left: 350px;
-  font-size: 60px;
-  font-family: serif;
-  color: white;
   font-weight: bold;
-  border-style: double;
-  border-color: white;
-  border-width: 12px;
-  width: 550px;
-  height: 75px;
+  font-size: 50px;
+  text-shadow: 2px 2px #fff;
 }
 
-body{
-  background-color: #baa8a8;
+header{
+  background-color: #3d827f;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px 10px;
+  margin-bottom: 5px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+input{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 7px 0;
+  box-sizing: border-box;
+
+}
+
+.addButton{
+  width: 70px;
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 6px 10px 0 #000000;
+  font-size: 50px;
+  color: #3d827f;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  right: 0px;
+  bottom: 5px;
+}
+.addButton:hover{
+  background-color: #2a4c52;
+  font-size: 50px;
+  color: #fff;
+}
+
+
+#item{
+  border-radius: 20px;
+  margin-top: 5px;
+  font-size: 24px;
+  position: relative;
+  top: -10px;
+}
+.images{
+  width: 20px;
+  height: 20px;
+}
+
+.remove{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -27px;
+  right: -95px;
+}
+
+.complete{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -27px;
+  right: -125px;
+}
+
+.prioritize{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -27px;
+  right: -155px;
+
+}
+.list{
+  width: 80px;
+  height:70px;
+  position: relative;
+  top: 15px;
+  right: 25px;
+}
+.list2{
+  width: 80px;
+  height:70px;
+  position: relative;
+  top: 15px;
+  right:10px;
+}
+.container{
+  font-size: 28px;
+  background-color:#e1e1e8;
+  padding: 10px 10px;
+  margin-bottom: 5px;
+  margin-left: 75px;
+  margin-right: 75px;
+  height: 500px;
+  border-radius: 20px;
 
 }
