@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title>To Do List</title>
+  <head>
+      <title>To Do List</title>
+      <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1><img class="list" src="images/list.jpg"/>To-Do List <img class="list2" src="images/list.jpg"/></h1>
 
-    <!-- stylesheets -->
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
-
+        <div class = "add">
+            <input type = "text" placeholder="What do you have to do?..." id = "item"></input>
+            <button class = "addButton" id="addItem">+</button>
+        </div>
+      </header>
+      <div class = "container">
+      <ul class = "list" id="list">
+      <!--<li>item</li>
+        <button class = "remove"> <img class = "remove" src="images/remove.png"/></button>
+        <button class = "complete"> <img class = "complete"src="images/check.png" /></button>
+        <button class = "prioritize"> <img class = "prioritize" src="images/exclamation.png" /></button>!
+      buttons-->
+      </ul>
     <script type = "text/javascript" src = "js/app.js"></script>
+  </body>
 
-</head>
-<header>
-  <h1>To Do List</h1>
-
-  </header>
 </html>
