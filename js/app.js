@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 //add to do
 function addItem(){
     var li = document.createElement("li");
@@ -27,7 +27,6 @@ function addItem(){
           }
         }
   }
-=======
 
 document.getElementById('addItem').addEventListener('click',function(){
   var toDo = document.getElementById('item').toDo;
@@ -52,4 +51,3 @@ function addToList(text){
     prioritize.classList.add('prioritize');
 
 }
->>>>>>> 62204c833e61ec7384b01b47dc37a6af401332e5
