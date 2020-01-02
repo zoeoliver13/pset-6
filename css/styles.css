@@ -12,10 +12,10 @@ h1{
   width: 550px;
   height: 75px;
 }
-h2{
-  align:center;
-  height: 20px;
-  width: auto;
+#searchBar{
+margin-left:750px;
+font-family: serif;
+
 }
 body{
   background-color: #baa8a8;
