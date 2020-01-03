@@ -21,11 +21,7 @@ input{
   width: 50%;
   padding: 12px 20px;
   margin: 7px 0;
-<<<<<<< HEAD
-=======
   box-sizing: border-box;
->>>>>>> 62204c833e61ec7384b01b47dc37a6af401332e5
-
 }
 
 .addButton{
@@ -85,6 +81,14 @@ input{
   right: -155px;
 
 }
+ul{
+  width: 100%;
+text-indent: 100px;
+list-style: none;
+margin: 0 0 10px 0;
+padding: 0 100px 0 0;
+position: relative;
+}
 .list{
   width: 80px;
   height:70px;
@@ -102,11 +106,16 @@ input{
 .container{
   font-size: 28px;
   background-color:#e1e1e8;
-  padding: 10px 10px;
   margin-bottom: 5px;
-  margin-left: 75px;
-  margin-right: 75px;
   height: 500px;
   border-radius: 20px;
+  padding: 0 100px 0 0;
+}
 
+.buttons{
+  width: 50px;
+  width: 50px;
+  background: none;
+  border: 0px;
+  box-shadow: none;
 }

@@ -1,5 +1,5 @@
 
-//add to do
+//add to-do
 function addItem(){
     var li = document.createElement("li");
     var input = document.getElementById("item").value;
@@ -11,43 +11,15 @@ function addItem(){
       document.getElementById("list").appendChild(li);
     }
       document.getElementById("item").value = "";
-      var span = document.createElement("SPAN");
-//      var text = document.createElement("img");
-  //    text.src = "images/remove.png";
-    //  var src = document.getElementById("remove");
-    //  src.appendChild(text);
-      span.className = "close";
-    //  span.appendChild(text);
-      li.appendChild(span);
-
-        for (i = 0; i < close.length; i++) {
-          close[i].onclick = function() {
-            var div = this.parentElement;
-            div.style.display = "none";
-          }
-        }
+      var remove = document.createElement("BUTTON");
+      remove.innerHTML = "images/remove.png";
+      remove.className = "images/remove.png";
+      li.appendChild(remove);
   }
+ /*var img = document.createElement("img");
 
-document.getElementById('addItem').addEventListener('click',function(){
-  var toDo = document.getElementById('item').toDo;
-  if(toDo) addToList(toDo);
-});
+ img.src = "image.png";
+ var src = document.getElementById("x");
 
-function addToList(text){
-  var list = document.getElementById('list');
-  var item = document.createElement('li');
-    item.innerText = text;
-
-  var buttons = document.createElement('div');
-    buttons.classList.add('buttons');
-
-  var  complete = document.createElement('button');
-    complete.classList.add('complete');
-
-  var remove = document.createElement('button');
-    remove.classList.add('remove');
-
-  var prioritize = document.createElement('button');
-    prioritize.classList.add('prioritize');
-
-}
+ src.appendChild(img);
+*/
