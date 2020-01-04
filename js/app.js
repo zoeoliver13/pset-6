@@ -4,22 +4,59 @@ function addItem(){
     var li = document.createElement("li");
     var input = document.getElementById("item").value;
     var add = document.createTextNode(input);
+    var button = document.createElement("button");
     li.appendChild(add);
-    if (input === '') {
-      alert("You have to write a to-do!");
-    } else {
-      document.getElementById("list").appendChild(li);
-    }
-      document.getElementById("item").value = "";
-      var remove = document.createElement("BUTTON");
-      remove.innerHTML = "images/remove.png";
-      remove.className = "images/remove.png";
-      li.appendChild(remove);
-  }
- /*var img = document.createElement("img");
+      if (input === '') {
+        alert("You have to write a to-do!");
+      } else {
+        document.getElementById("list").appendChild(li);
+      }
 
- img.src = "image.png";
- var src = document.getElementById("x");
+//delete button
+   var erase = document.createTextNode("\u00D7");
+    button.className = "close";
+    button.appendChild(erase);
+    li.appendChild(button);
+    var close = document.getElementsByClassName("close");
+      for (var i = 0; i < close.length; i++) {
+          close[i].onclick = function() {
+    var div = this.parentElement;
+    div.remove();
+          }
+        }
 
- src.appendChild(img);
-*/
+//prioritize button
+    var button = document.createElement("Button");
+    var exclamationPoint = document.createTextNode("!");
+        button.id = "prioritize";
+        button.appendChild(exclamationPoint);
+         li.appendChild(button);
+
+//completing a to-do
+    var complete = document.querySelector('ul');
+      complete.addEventListener('click', function(ev) {
+        if (ev.target.tagName === 'list') {
+            ev.target.classList.toggle('checked');
+            }
+          }, false);
+
+        }
+//remove a to-do
+      var close = document.getElementsByClassName("close");
+      var div = this.parentElement;
+          for (var i = 0; i < close.length; i++) {
+            close[i].onclick = function() {
+              div.remove()
+        }
+      }
+  //prioritize a to-do
+  list.addEventListener('click', function(ev) {
+        if (ev.target.id == "prioritize") {
+          ev.target.classList.toggle('item');
+          if (ev.target.className == 'item'){
+            document.getElementById("list").prepend(ev.target.parentElement);
+          }else{
+            document.getElementById("list").append(ev.target.parentElement);
+          }
+        }
+      }, false);

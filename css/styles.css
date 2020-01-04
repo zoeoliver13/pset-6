@@ -1,13 +1,26 @@
-*{
-  font-family: Lucida , Courier;
 
+*{
+font-family: Lucida , Courier;
 }
+/*background*/
+.container{
+  background-color:#e1e1e8;
+  margin-bottom: 5px;
+  height: 500px;
+  padding: 15px;
+  border-radius: 20px;
+  margin-left: 75px;
+  margin-right: 75px;
+  padding-left: : 50px;
+  overflow: scroll;
+}
+
+/*Title*/
 h1{
   font-weight: bold;
   font-size: 50px;
   text-shadow: 2px 2px #fff;
 }
-
 header{
   background-color: #3d827f;
   border-radius: 20px;
@@ -17,6 +30,22 @@ header{
   margin-left: 75px;
   margin-right: 75px;
 }
+.list1{
+  width: 80px;
+  height:70px;
+  position: relative;
+  top: 15px;
+  right: 25px;
+}
+.list2{
+  width: 80px;
+  height:70px;
+  position: relative;
+  top: 15px;
+  right:10px;
+}
+
+/*Input and Add button*/
 input{
   width: 50%;
   padding: 12px 20px;
@@ -44,7 +73,6 @@ input{
   color: #fff;
 }
 
-
 #item{
   border-radius: 20px;
   margin-top: 5px;
@@ -52,6 +80,7 @@ input{
   position: relative;
   top: -10px;
 }
+
 .images{
   width: 20px;
   height: 20px;
@@ -82,40 +111,68 @@ input{
 
 }
 ul{
-  width: 100%;
-text-indent: 100px;
-list-style: none;
-margin: 0 0 10px 0;
-padding: 0 100px 0 0;
-position: relative;
-}
-.list{
-  width: 80px;
-  height:70px;
-  position: relative;
-  top: 15px;
-  right: 25px;
-}
-.list2{
-  width: 80px;
-  height:70px;
-  position: relative;
-  top: 15px;
-  right:10px;
-}
-.container{
+  width: 90%;
+  height: 40px;
+  float: left;
   font-size: 28px;
-  background-color:#e1e1e8;
-  margin-bottom: 5px;
-  height: 500px;
-  border-radius: 20px;
-  padding: 0 100px 0 0;
+  text-indent: 50px;
+  list-style: none;
+  position: relative;
+  left: 15px;
+  padding: 20px 100px 20px 20px;
+  line-height: 70px;
+
 }
 
-.buttons{
-  width: 50px;
-  width: 50px;
-  background: none;
-  border: 0px;
-  box-shadow: none;
+.button{
+  width: 100px;
+  height: 50px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  right: 100px;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  box-shadow: 0 6px 10px 0 #000000;
+  font-weight: bold;
+  color: #3d827f;
+  background-color: white;
+
+}
+#prioritize {
+  position: absolute;
+  padding-left: 10px;
+  padding-right: 10px;
+  right: 200px;
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  box-shadow: 0 6px 10px 0 #000000;
+  font-weight: bold;
+  color: #3d827f;
+  background-color: white;
+}
+ul.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+ul.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
 }
