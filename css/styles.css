@@ -2,20 +2,8 @@
 *{
 font-family: Lucida , Courier;
 }
-/*background*/
-.container{
-  background-color:#e1e1e8;
-  margin-bottom: 5px;
-  height: 500px;
-  padding: 15px;
-  border-radius: 20px;
-  margin-left: 75px;
-  margin-right: 75px;
-  padding-left: : 50px;
-  overflow: scroll;
-}
 
-/*Title*/
+/*Title and stuff*/
 h1{
   font-weight: bold;
   font-size: 50px;
@@ -81,36 +69,9 @@ input{
   top: -10px;
 }
 
-.images{
-  width: 20px;
-  height: 20px;
-}
-
-.remove{
-  width: 20px;
-  height: 20px;
-  position: relative;
-  top: -27px;
-  right: -95px;
-}
-
-.complete{
-  width: 20px;
-  height: 20px;
-  position: relative;
-  top: -27px;
-  right: -125px;
-}
-
-.prioritize{
-  width: 20px;
-  height: 20px;
-  position: relative;
-  top: -27px;
-  right: -155px;
-
-}
+/*Actual todo list*/
 ul{
+  cursor: pointer;
   width: 90%;
   height: 40px;
   float: left;
@@ -118,18 +79,35 @@ ul{
   text-indent: 50px;
   list-style: none;
   position: relative;
+  top: 10px;
   left: 15px;
   padding: 20px 100px 20px 20px;
   line-height: 70px;
 
 }
-
-.button{
-  width: 100px;
-  height: 50px;
-  position: relative;
+.container{
+  background-color:#e1e1e8;
+  margin-bottom: 5px;
+  height: 500px;
+  padding: 15px;
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin-left: 75px;
+  margin-right: 75px;
+  overflow: scroll;
+  margin-top: 10px;
+}
+ul li.checked {
+  color: #fff;
+  text-decoration: line-through;
+}
+ul li:hover {
+  text-decoration: line-through;
+  color: grey;
 }
 
+
+/*Buttons*/
 .close {
   position: absolute;
   right: 100px;
@@ -144,6 +122,8 @@ ul{
   background-color: white;
 
 }
+
+
 #prioritize {
   position: absolute;
   padding-left: 10px;
@@ -158,21 +138,4 @@ ul{
   font-weight: bold;
   color: #3d827f;
   background-color: white;
-}
-ul.checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
-}
-ul.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
 }

@@ -1,3 +1,6 @@
+var app = (localStorage.getItem('todoList')) ? JSON.parse(localStorage.getItem('todoList')):{
+  todo: []
+};
 
 //add to-do
 function addItem(){
@@ -32,17 +35,18 @@ function addItem(){
         button.appendChild(exclamationPoint);
          li.appendChild(button);
 
+}
 //completing a to-do
-    var complete = document.querySelector('ul');
-      complete.addEventListener('click', function(ev) {
-        if (ev.target.tagName === 'list') {
-            ev.target.classList.toggle('checked');
+    var list = document.querySelector('ul');
+      list.addEventListener('click', function(ev) {
+          if (ev.target.tagName === 'LI') {
+              ev.target.classList.toggle('checked');
             }
           }, false);
 
-        }
 //remove a to-do
-      var close = document.getElementsByClassName("close");
+
+    var close = document.getElementsByClassName("close");
       var div = this.parentElement;
           for (var i = 0; i < close.length; i++) {
             close[i].onclick = function() {
@@ -50,7 +54,7 @@ function addItem(){
         }
       }
   //prioritize a to-do
-  list.addEventListener('click', function(ev) {
+    list.addEventListener('click', function(ev) {
         if (ev.target.id == "prioritize") {
           ev.target.classList.toggle('item');
           if (ev.target.className == 'item'){
