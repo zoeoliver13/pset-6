@@ -98,12 +98,11 @@ ul{
   margin-top: 10px;
 }
 ul li.checked {
-  color: #fff;
+  color: grey;
   text-decoration: line-through;
 }
 ul li:hover {
   text-decoration: line-through;
-  color: grey;
 }
 
 /*Buttons*/

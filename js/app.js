@@ -1,7 +1,3 @@
-//the form wont clear after submission :(
-var form = document.getElementById("item");
-form.reset();
-
 var app = (localStorage.getItem('todoList')) ? JSON.parse(localStorage.getItem('todoList')):{
   todo: []
 };
