@@ -34,9 +34,17 @@ function addItem(){
         button.id = "prioritize";
         button.appendChild(exclamationPoint);
          li.appendChild(button);
-
+//complete button: try and figue out how to link to the completion code
+/*    var completeButton = document.createElement("Button");
+    var done = document.createTextNode("Complete");
+        completeButton.id = "complete";
+        completeButton.appendChild(done);
+        li.appendChild(completeButton);
+*/
 }
 //completing a to-do
+    var connectButton = document.getElementsByClassName("complete");
+
     var list = document.querySelector('ul');
       list.addEventListener('click', function(ev) {
           if (ev.target.tagName === 'LI') {
